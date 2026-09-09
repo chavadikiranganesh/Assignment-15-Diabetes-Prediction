@@ -383,5 +383,3 @@ Project Documentation
 README.md
 Live Streamlit application URL
 https://assignment-15-diabetes-prediction-4zo5vb6uaoggypw2vybrwm.streamlit.app/
-
-The Streamlit implementation makes the trained model accessible through an interactive web interface, demonstrating how a machine learning model can be converted into a practical application.
