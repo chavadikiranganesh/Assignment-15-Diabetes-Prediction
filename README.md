@@ -381,13 +381,8 @@ requirements.txt
 Project Documentation
 
 README.md
-
-Deployment
-
-GitHub repository
-
 Live Streamlit application URL
-
+https://assignment-15-diabetes-prediction-4zo5vb6uaoggypw2vybrwm.streamlit.app/
 📌 Practical Implications
 
 LightGBM and XGBoost are effective gradient-boosting algorithms for binary classification problems.
