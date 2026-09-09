@@ -383,10 +383,5 @@ Project Documentation
 README.md
 Live Streamlit application URL
 https://assignment-15-diabetes-prediction-4zo5vb6uaoggypw2vybrwm.streamlit.app/
-📌 Practical Implications
-
-LightGBM and XGBoost are effective gradient-boosting algorithms for binary classification problems.
-
-Comparing both models helps identify which algorithm provides better predictive performance for the given diabetes dataset.
 
 The Streamlit implementation makes the trained model accessible through an interactive web interface, demonstrating how a machine learning model can be converted into a practical application.
