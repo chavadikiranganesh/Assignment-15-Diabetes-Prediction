@@ -1,184 +1,237 @@
-# Assignment 15 — Diabetes Prediction using LightGBM and XGBoost
+Assignment 15 — Diabetes Prediction using LightGBM and XGBoost
 
-## 📌 Project Overview
+📌 Project Overview
 
-This project implements a machine learning based **Diabetes Prediction System** using the **LightGBM** and **XGBoost** classification algorithms.
+This project implements a machine learning based Diabetes Prediction System using the LightGBM and XGBoost classification algorithms.
 
 The project is based on the Diabetes dataset and includes:
 
-- Exploratory Data Analysis (EDA)
-- Data preprocessing
-- Missing-value handling
-- LightGBM classification
-- XGBoost classification
-- Model evaluation
-- Cross-validation
-- Hyperparameter tuning
-- Model comparison
-- Streamlit web application
-- Model deployment
+Exploratory Data Analysis (EDA)
+
+Data preprocessing
+
+Missing-value handling
+
+LightGBM classification
+
+XGBoost classification
+
+Model evaluation
+
+Cross-validation
+
+Hyperparameter tuning
+
+Model comparison
+
+Streamlit web application
+
+Model deployment
 
 The original assignment focuses on comparing the performance of LightGBM and XGBoost on the diabetes dataset.
 
----
+🎯 Objective
 
-## 🎯 Objective
+The objective of this assignment is to compare the performance of LightGBM and XGBoost algorithms for predicting whether a person is likely to have diabetes.
 
-The objective of this assignment is to compare the performance of **LightGBM** and **XGBoost** algorithms for predicting whether a person is likely to have diabetes.
+The project also converts the trained machine learning models into an interactive Streamlit web application for real-time prediction.
 
-The project also converts the trained machine learning models into an interactive **Streamlit web application** for real-time prediction.
-
----
-
-## 📊 Dataset
+📊 Dataset
 
 The project uses a diabetes classification dataset.
 
 The target variable is:
 
-- `Outcome = 0` → No Diabetes
-- `Outcome = 1` → Diabetes
+Outcome = 0 → No Diabetes
 
-### Features
+Outcome = 1 → Diabetes
 
-| Feature | Description |
-|---|---|
-| Pregnancies | Number of pregnancies |
-| Glucose | Plasma glucose concentration |
-| BloodPressure | Diastolic blood pressure |
-| SkinThickness | Triceps skin fold thickness |
-| Insulin | 2-Hour serum insulin |
-| BMI | Body Mass Index |
-| DiabetesPedigreeFunction | Diabetes pedigree function |
-| Age | Age of the person |
-| Outcome | Target variable |
+Features
 
----
+Feature
 
-## 🔍 Exploratory Data Analysis
+Description
+
+Pregnancies
+
+Number of pregnancies
+
+Glucose
+
+Plasma glucose concentration
+
+BloodPressure
+
+Diastolic blood pressure
+
+SkinThickness
+
+Triceps skin fold thickness
+
+Insulin
+
+2-Hour serum insulin
+
+BMI
+
+Body Mass Index
+
+DiabetesPedigreeFunction
+
+Diabetes pedigree function
+
+Age
+
+Age of the person
+
+Outcome
+
+Target variable
+
+🔍 Exploratory Data Analysis
 
 The notebook performs exploratory analysis to understand the dataset.
 
 The analysis includes:
 
-- Dataset shape
-- Data types
-- Statistical summary
-- Missing-value analysis
-- Feature distributions
-- Histograms
-- Box plots
-- Correlation analysis
-- Relationship between features and diabetes outcome
+Dataset shape
 
----
+Data types
 
-## 🧹 Data Preprocessing
+Statistical summary
+
+Missing-value analysis
+
+Feature distributions
+
+Histograms
+
+Box plots
+
+Correlation analysis
+
+Relationship between features and diabetes outcome
+
+🧹 Data Preprocessing
 
 The following preprocessing steps are performed:
 
-1. Separate input features and target variable.
-2. Identify invalid zero values in medical measurements.
-3. Treat zero values in selected columns as missing values.
-4. Replace missing values using median imputation.
-5. Split the dataset into training and testing sets.
-6. Use stratification to maintain the class distribution.
+Separate input features and target variable.
+
+Identify invalid zero values in medical measurements.
+
+Treat zero values in selected columns as missing values.
+
+Replace missing values using median imputation.
+
+Split the dataset into training and testing sets.
+
+Use stratification to maintain the class distribution.
 
 The following features are treated for missing-value handling:
 
-- Glucose
-- BloodPressure
-- SkinThickness
-- Insulin
-- BMI
+Glucose
 
----
+BloodPressure
 
-## 🤖 Machine Learning Models
+SkinThickness
+
+Insulin
+
+BMI
+
+🤖 Machine Learning Models
 
 Two gradient-boosting classification algorithms are implemented.
 
-### 1. LightGBM
+1. LightGBM
 
 LightGBM is a gradient boosting framework designed for efficient and high-performance machine learning.
 
 It is trained using a preprocessing pipeline that includes median imputation.
 
-### 2. XGBoost
+2. XGBoost
 
 XGBoost is another powerful gradient boosting algorithm widely used for classification and regression problems.
 
 The XGBoost model is also trained using the preprocessing pipeline.
 
----
-
-## ⚙️ Model Optimization
+⚙️ Model Optimization
 
 Cross-validation and hyperparameter tuning are used to improve model performance.
 
 Important hyperparameters include:
 
-### LightGBM
+LightGBM
 
-- `n_estimators`
-- `max_depth`
-- `learning_rate`
+n_estimators
 
-### XGBoost
+max_depth
 
-- `n_estimators`
-- `max_depth`
-- `learning_rate`
+learning_rate
+
+XGBoost
+
+n_estimators
+
+max_depth
+
+learning_rate
 
 The models are compared using appropriate classification metrics.
 
----
-
-## 📈 Model Evaluation
+📈 Model Evaluation
 
 The models are evaluated using:
 
-- Accuracy
-- Precision
-- Recall
-- F1-Score
+Accuracy
+
+Precision
+
+Recall
+
+F1-Score
 
 The results are compared to identify which algorithm performs better on the diabetes dataset.
 
----
-
-## 🖥️ Streamlit Application
+🖥️ Streamlit Application
 
 The trained models are integrated into an interactive Streamlit web application.
 
 The application allows users to enter patient information such as:
 
-- Pregnancies
-- Glucose
-- Blood Pressure
-- Skin Thickness
-- Insulin
-- BMI
-- Diabetes Pedigree Function
-- Age
+Pregnancies
+
+Glucose
+
+Blood Pressure
+
+Skin Thickness
+
+Insulin
+
+BMI
+
+Diabetes Pedigree Function
+
+Age
 
 The user can select either:
 
-- LightGBM
-- XGBoost
+LightGBM
 
-and click the **Predict Diabetes** button.
+XGBoost
+
+and click the Predict Diabetes button.
 
 The application then displays:
 
-- Prediction result
-- Estimated diabetes probability
+Prediction result
 
----
+Estimated diabetes probability
 
-## 🏗️ Project Architecture
+🏗️ Project Architecture
 
-```text
 Diabetes Dataset
        │
        ▼
@@ -209,3 +262,135 @@ Train/Test Split
                │
                ▼
           Deployment
+
+🌐 Live Application
+
+The deployed Streamlit application is available here:
+
+Open the Live Diabetes Prediction Application
+
+📁 Project Structure
+
+Assignment_15_Diabetes_Deployment/
+│
+├── Assignment_15_LGBM_XGBM_Diabetes.ipynb
+├── app.py
+├── train_models.py
+├── requirements.txt
+├── README.md
+├── diabetes.csv
+│
+├── models/
+│   ├── lightgbm_model.pkl
+│   └── xgboost_model.pkl
+│
+└── screenshots/
+    ├── home_page.png
+    ├── prediction_result.png
+    └── deployed_app.png
+
+🛠️ Technologies Used
+
+Python
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+LightGBM
+
+XGBoost
+
+Joblib
+
+Streamlit
+
+Jupyter Notebook
+
+💻 Installation
+
+Clone the repository:
+
+git clone YOUR_GITHUB_REPOSITORY_URL
+
+Move into the project directory:
+
+cd Assignment_15_Diabetes_Deployment
+
+Install the required libraries:
+
+pip install -r requirements.txt
+
+▶️ Run the Project Locally
+
+First train and save the machine learning models:
+
+python train_models.py
+
+Then start the Streamlit application:
+
+streamlit run app.py
+
+The application will be available at:
+
+http://localhost:8501
+
+📋 Assignment Submission
+
+The final submission contains:
+
+Jupyter Notebook
+
+EDA
+
+Data preprocessing
+
+LightGBM
+
+XGBoost
+
+Model evaluation
+
+Hyperparameter tuning
+
+Comparative analysis
+
+Source Code
+
+app.py
+
+train_models.py
+
+Dataset
+
+diabetes.csv
+
+Trained Models
+
+LightGBM model
+
+XGBoost model
+
+Requirements File
+
+requirements.txt
+
+Project Documentation
+
+README.md
+
+Deployment
+
+GitHub repository
+
+Live Streamlit application URL
+
+📌 Practical Implications
+
+LightGBM and XGBoost are effective gradient-boosting algorithms for binary classification problems.
+
+Comparing both models helps identify which algorithm provides better predictive performance for the given diabetes dataset.
+
+The Streamlit implementation makes the trained model accessible through an interactive web interface, demonstrating how a machine learning model can be converted into a practical application.
