@@ -265,7 +265,8 @@ Train/Test Split
 
 🌐 Live Application
 
-The deployed Streamlit application is available here:
+The deployed Streamlit application is available here: 
+https://assignment-15-diabetes-prediction-4zo5vb6uaoggypw2vybrwm.streamlit.app/
 
 Open the Live Diabetes Prediction Application
 
@@ -313,7 +314,7 @@ Jupyter Notebook
 
 Clone the repository:
 
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone REPOSITORY_URL
 
 Move into the project directory:
 
